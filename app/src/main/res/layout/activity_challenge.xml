@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#47a1ecff"
+    android:gravity="right"
+    tools:context=".Challenge">
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="27sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="35sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/t1"
+        android:paddingLeft="27sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#d5d3d3d3"
+        android:textSize="20sp"
+        android:textStyle="bold|normal"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2">
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/t2"
+            android:paddingLeft="20sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30sp"
+            android:textStyle="italic"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backToList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backToMyChallenge"
+        android:layout_toLeftOf="@+id/replaceChallenge"
+        android:layout_toStartOf="@+id/replaceChallenge"
+        android:text="@string/backtolist"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/replaceChallenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backToMyChallenge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/replacechallenge"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/backToMyChallenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/backtomychallenge"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
